@@ -67,6 +67,9 @@
             bottom: 0;
             width: 100%;
         }
+        li{
+            font-size: xx-large;
+        }
     </style>
 </head>
 
@@ -152,10 +155,25 @@
                 <?php endforeach; ?>
             <?php endforeach; ?>
 
-            <!-- Dodajte ostale Python podatke ovde -->
+
         <?php else: ?>
-            <h1><?= $titrepage ?></h1>
-            <p class="description"><?= nl2br($text) ?></p>
+            <h1>Bienvenue sur mon mini site en PHP !</h1>
+
+    <?php foreach ($contenu as $section => $items): ?>
+        
+            <h2><?= $section ?></h2> 
+           
+                <?php foreach ($items as $item): ?>
+                    <li><?= $item ?></li><br>
+                <?php endforeach; ?>
+            </ul>
+        </li>
+    <?php endforeach; ?>
+</ul>
+
+    
+
+    <p class="description">Merci de visiter mon projet et n'hésitez pas à proposer des suggestions ou améliorations !</p>
         <?php endif; ?>
     </main>
     <footer>

@@ -86,5 +86,8 @@ if (isset($_GET['p'])) {
 } else {
     $titrepage = $decription['titre'];
     $text = $decription['description'];
+    $contenu1 = $contenu['Objectifs du projet'];
+    $contenu2 = $contenu['Technologies étudiées'];
+    $contenu3 = $contenu['Pourquoi ce projet est important'];
 
 }
